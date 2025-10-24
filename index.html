@@ -39,7 +39,7 @@
         width: auto;
         border-radius: 10px;
         object-fit: contain;
-        mix-blend-mode: lighten; /* helps blend the white background */
+        mix-blend-mode: lighten;
         transition: transform 0.3s ease;
         display: block;
     }
@@ -100,18 +100,22 @@
     header p {
         font-size: 1.2em;
         margin-top: 10px;
-        opacity: 0.85;
+        opacity: 0.9;
         animation: fadeInUp 1s ease-out;
     }
 
+    header p strong {
+        color: #ffdd57;
+    }
+
     @keyframes fadeInDown {
-        from { opacity: 0; transform: translateY(-50px);} 
-        to { opacity: 1; transform: translateY(0);} 
+        from { opacity: 0; transform: translateY(-50px);}
+        to { opacity: 1; transform: translateY(0);}
     }
 
     @keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(50px);} 
-        to { opacity: 1; transform: translateY(0);} 
+        from { opacity: 0; transform: translateY(50px);}
+        to { opacity: 1; transform: translateY(0);}
     }
 
     .container {
@@ -166,6 +170,16 @@
     .contact p {
         font-size: 1.1em;
         margin: 10px 0;
+    }
+
+    .contact a {
+        color: #1a73e8;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .contact a:hover {
+        text-decoration: underline;
     }
 
     .btn {
@@ -233,7 +247,7 @@
 <!-- Header -->
 <header>
     <h1>VJ Cloud Tech</h1>
-    <p>Empowering Businesses with SAP Cloud Solutions</p>
+    <p>Empowering Businesses with SAP Cloud Solutions &amp; <strong>SAP SuccessFactors</strong></p>
     <a href="#contact" class="btn">Get in Touch</a>
 </header>
 
@@ -261,7 +275,11 @@
     <h2>Contact Us</h2>
     <p>📧 Email: VjCTl@outlook.com</p>
     <p>📞 Phone: +41 7563716225</p>
-    <p>🔗 LinkedIn ID: VJ Cloudtech</p>
+    <p>🔗 LinkedIn: 
+        <a href="https://uk.linkedin.com/in/vj-cloudtech-048651389" target="_blank">
+            VJ Cloudtech
+        </a>
+    </p>
     <p>📍 Address: SL12HX, Slough, London, UK</p>
 </div>
 
